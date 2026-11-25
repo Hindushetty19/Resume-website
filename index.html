@@ -4,274 +4,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume and Bio-data</title>
+    <title>K Hindu Shetti | Personal Resume</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
 
-<header>
-    <h2>My Portfolio</h2>
-    <nav>
-        <a href="#" onclick="showPage('home'); return false;">Home</a>
-        <a href="#" onclick="showPage('resume'); return false;">Resume</a>
-        <a href="#" onclick="showPage('biodata'); return false;">Bio-data</a>
-    </nav>
-</header>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">My Portfolio</h2>
 
-<!-- HOME PAGE -->
-<section id="home" class="page active">
+            <ul>
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('resume')">Resume</a></li>
+                <li><a href="#" onclick="showPage('biodata')">Bio-data</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="home-content">
-        <p class="welcome-text">WELCOME TO MY PERSONAL WEBSITE</p>
+    <!-- HOME PAGE -->
+    <section id="home" class="page active">
+        <div class="home-content">
+            <h1>WELCOME TO MY PERSONAL WEBSITE</h1>
+            <h2>Hi, I'm K Hindu Shetty</h2>
+            <p>
+                I am a third-year Computer Science and Engineering
+                student at Rajeev Institute of Technology, Hassan.
+            </p>
 
-        <h1>Hello, I'm <span>K Hindu Shetti</span></h1>
+            <p>
+                Welcome to my personal website. Explore my resume,
+                educational background, skills and personal details.
+            </p>
 
-        <h2>Computer Science and Engineering Student</h2>
-
-        <p>
-            I am a third-year CSE student at
-            Rajeev Institute of Technology, Hassan.
-            I am passionate about programming, technology
-            and Artificial Intelligence.
-        </p>
-
-        <button onclick="showPage('resume')">
-            Explore My Profile
-        </button>
-    </div>
-
-    <!-- EXPLORE PROFILE SECTION -->
-    <div class="explore-section">
-
-        <div class="explore-heading">
-            <p>GET TO KNOW ME</p>
-            <h2>Explore My Profile</h2>
-            <span>
-                Discover my academic journey, skills and personal background.
-            </span>
+            <button onclick="showPage('resume')">Explore My Profile</button>
         </div>
 
-        <div class="profile-options">
-
-            <!-- RESUME -->
-            <div class="profile-item">
-                <div class="profile-number">01</div>
-
-                <div class="profile-info">
-                    <h3>My Resume</h3>
-
-                    <p>
-                        Explore my educational qualifications,
-                        technical skills, projects and achievements.
-                    </p>
-
-                    <a href="#" onclick="showPage('resume'); return false;">
-                        View Resume →
-                    </a>
-                </div>
+        <div class="home-cards">
+            <div class="home-card">
+                <h3>My Resume</h3>
+                <p>Explore my education, technical skills and achievements.</p>
+                <button onclick="showPage('resume')">View Resume</button>
             </div>
 
-            <!-- BIO-DATA -->
-            <div class="profile-item">
-                <div class="profile-number">02</div>
+            <div class="home-card">
+                <h3>My Bio-data</h3>
+                <p>Learn more about my personal information and background.</p>
+                <button onclick="showPage('biodata')">View Bio-data</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESUME PAGE -->
+    <section id="resume" class="page">
+        <div class="resume-container">
+
+            <div class="profile-header">
+
+                <!-- PROFILE PHOTO -->
+                <div class="profile-image">
+                    <img src="profile.jpeg"
+                         alt="K Hindu Shetty Profile Photo">
+                </div>
 
                 <div class="profile-info">
-                    <h3>My Bio-data</h3>
-
-                    <p>
-                        Get to know more about my personal details,
-                        educational background and interests.
-                    </p>
-
-                    <a href="#" onclick="showPage('biodata'); return false;">
-                        View Bio-data →
-                    </a>
+                    <h1>K Hindu Shetty</h1>
+                    <h3>Computer Science and Engineering Student</h3>
+                    <p>Rajeev Institute of Technology, Hassan</p>
+                    <p>Email: hindushetty@gmail.com</p>
+                    <p>Phone: +91 8553537434</p>
                 </div>
+
             </div>
+
+            <hr>
+
+            <h2>Career Objective</h2>
+            <p>
+                To obtain an opportunity where I can apply my technical
+                knowledge, improve my programming skills and contribute
+                to organizational growth while developing my career.
+            </p>
+
+            <h2>Educational Qualifications</h2>
+
+            <table>
+                <tr>
+                    <th>Qualification</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                </tr>
+
+                <tr>
+                    <td>B.E. – Computer Science and Engineering</td>
+                    <td>Rajeev Institute of Technology, Hassan</td>
+                    <td>Currently Pursuing</td>
+                </tr>
+
+                <tr>
+                    <td>PUC</td>
+                    <td>Gurukula pu college</td>
+                    <td>2022-2024</td>
+                </tr>
+
+                <tr>
+                    <td>SSLC</td>
+                    <td>M Tres High school</td>
+                    <td>2022</td>
+                </tr>
+            </table>
+
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Python Programming</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Basic Database Management</li>
+            </ul>
+
+            <h2>Projects</h2>
+            <ul>
+                <li>Personal Resume Website using HTML, CSS and JavaScript.</li>
+                <li>Academic and technical projects.</li>
+            </ul>
+
+            <h2>Achievements and Activities</h2>
+            <ul>
+                <li>Participated in technical and college activities.</li>
+                <li>Interested in Artificial Intelligence and Web Development.</li>
+            </ul>
+
+            <h2>Personal Strengths</h2>
+            <ul>
+                <li>Quick Learner</li>
+                <li>Problem Solving</li>
+                <li>Teamwork</li>
+                <li>Positive Attitude</li>
+            </ul>
+
+            <h2>Declaration</h2>
+            <p>
+                I hereby declare that the information provided above
+                is true and correct to the best of my knowledge.
+            </p>
+
+            <p class="signature">
+                <strong>Place:</strong> Hassan<br>
+                <strong>Name:</strong> K Hindu Shetti
+            </p>
+
+            <button onclick="window.print()">Download / Print Resume</button>
 
         </div>
-    </div>
+    </section>
 
-</section>
+    <!-- BIO-DATA PAGE -->
+    <section id="biodata" class="page">
+        <div class="biodata-container">
 
-<!-- RESUME PAGE -->
-<section id="resume" class="page">
+            <h1>MY BIO-DATA</h1>
 
-    <div class="container">
+            <div class="biodata-photo">
+                <img src="profile.jpeg" alt="My Profile Photo">
+            </div>
 
-        <h1>My Resume</h1>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <td>K Hindu Shetty</td>
+                </tr>
+                <tr>
+                    <th>Course</th>
+                    <td>B.E. Computer Science and Engineering</td>
+                </tr>
+                <tr>
+                    <th>College</th>
+                    <td>Rajeev Institute of Technology, Hassan</td>
+                </tr>
+                <tr>
+                    <th>Year</th>
+                    <td>Third Year</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>your-email@example.com</td>
+                </tr>
+                <tr>
+                    <th>Phone</th>
+                    <td>+91 XXXXXXXXXX</td>
+                </tr>
+                <tr>
+                    <th>Nationality</th>
+                    <td>Indian</td>
+                </tr>
+                <tr>
+                    <th>Languages Known</th>
+                    <td>English, Kannada</td>
+                </tr>
+                <tr>
+                    <th>Hobbies</th>
+                    <td>Learning new technologies, Coding, Reading</td>
+                </tr>
+                <tr>
+                    <th>Career Interest</th>
+                    <td>Artificial Intelligence and Software Development</td>
+                </tr>
+            </table>
 
-        <h2>Personal Profile</h2>
+            <h2>Declaration</h2>
+            <p>
+                I hereby declare that the above information is true
+                and correct to the best of my knowledge.
+            </p>
 
-        <p><b>Name:</b> K Hindu Shetti</p>
-        <p><b>Course:</b> B.E Computer Science and Engineering</p>
-        <p><b>College:</b> Rajeev Institute of Technology, Hassan</p>
+            <p><strong>Name:</strong> K Hindu Shetti</p>
 
-        <h2>Career Objective</h2>
+        </div>
+    </section>
 
-        <p>
-            To build a successful career in the IT industry
-            by applying my technical knowledge and improving
-            my programming and problem-solving skills.
-        </p>
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 K Hindu Shetti | Personal Resume Website</p>
+    </footer>
 
-        <h2>Educational Qualifications</h2>
-
-        <table>
-            <tr>
-                <th>Qualification</th>
-                <th>Institution</th>
-                <th>Year</th>
-            </tr>
-
-            <tr>
-                <td>B.E CSE</td>
-                <td>Rajeev Institute of Technology</td>
-                <td>2024-Present</td>
-            </tr>
-
-            <tr>
-                <td>PUC</td>
-                <td>Gurukula PU College</td>
-                <td>2022-2024</td>
-            </tr>
-
-            <tr>
-                <td>SSLC</td>
-                <td>M Tres High school</td>
-                <td>2022</td>
-            </tr>
-        </table>
-
-        <h2>Technical Skills</h2>
-
-        <ul>
-            <li>Python</li>
-            <li>HTML and CSS</li>
-            <li>JavaScript</li>
-            <li>SQL</li>
-            <li>Machine Learning (Learning)</li>
-        </ul>
-
-        <h2>Projects</h2>
-
-        <ul>
-            <li>Anti-Money Laundering Detection System using Machine Learning.</li>
-            <li>Add your other academic projects.</li>
-        </ul>
-
-        <h2>Achievements</h2>
-
-        <ul>
-            <li>Participated in technical activities.</li>
-            <li>Attended technical training programs.</li>
-            <li>Add your certificates and achievements.</li>
-        </ul>
-
-        <h2>Contact Information</h2>
-
-        <p>Email: hindushetty@gmail.com</p>
-        <p>Phone: +91 XXXXXXXXXX</p>
-        <p>Location: Hassan, Karnataka</p>
-
-        <h2>Declaration</h2>
-
-        <p>
-            I hereby declare that the above information
-            is true and correct to the best of my knowledge.
-        </p>
-
-        <p><b>Signature:</b> K Hindu Shetti</p>
-
-        <button onclick="window.print()">Print Resume</button>
-
-    </div>
-</section>
-
-<!-- BIO-DATA PAGE -->
-<section id="biodata" class="page">
-
-    <div class="container">
-
-        <h1>My Bio-data</h1>
-
-        <h2>Personal Details</h2>
-
-        <table>
-            <tr>
-                <th>Name</th>
-                <td>K Hindu Shetti</td>
-            </tr>
-
-            <tr>
-                <th>Date of Birth</th>
-                <td>Add Your Date of Birth</td>
-            </tr>
-
-            <tr>
-                <th>Gender</th>
-                <td>Female</td>
-            </tr>
-
-            <tr>
-                <th>Nationality</th>
-                <td>Indian</td>
-            </tr>
-
-            <tr>
-                <th>Languages Known</th>
-                <td>English</td>
-                <td>Kannada</td>
-            </tr>
-
-            <tr>
-                <th>Course</th>
-                <td>B.E Computer Science and Engineering</td>
-            </tr>
-
-            <tr>
-                <th>College</th>
-                <td>Rajeev Institute of Technology, Hassan</td>
-            </tr>
-
-            <tr>
-                <th>Hobbies</th>
-                <td>Learning Technologies, Reading</td>
-            </tr>
-
-            <tr>
-                <th>Address</th>
-                <td>Hassan, Karnataka</td>
-            </tr>
-        </table>
-
-        <h2>Educational Background</h2>
-
-        <p>
-            Currently pursuing Bachelor of Engineering
-            in Computer Science and Engineering at
-            Rajeev Institute of Technology, Hassan.
-        </p>
-
-        <h2>Declaration</h2>
-
-        <p>
-            I hereby declare that the above information
-            is true and correct to the best of my knowledge.
-        </p>
-
-        <p><b>Place:</b> Hassan</p>
-        <p><b>Name:</b> K Hindu Shetti</p>
-
-    </div>
-</section>
-
-<footer>
-    <p>© 2026 My Portfolio | All Rights Reserved</p>
-</footer>
-
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
